@@ -16,7 +16,7 @@ jobs:
       - name: step 1 for 2 job
         uses: actions/checkout@v2
       - name:  step 2 for 2 job
-        run: echo second job for step 2
+        run: "Get-ChildItem Env: | Sort-Object Name"
     
       
 

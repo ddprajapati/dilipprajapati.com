@@ -6,14 +6,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: first step
-        uses: actions/actions@v2
+        uses: actions/checkout@v2
       - name: second step
+        run: echo first job for step 2
   job2:
     name: second job
     runs-on: windows-latest
     steps:
       - name: second step
-        run: echo second job for step 1
+        uses: actions/checkout@v2
       - name: second step
         run: echo second job for step 2
     
